@@ -3,7 +3,8 @@ on: [pull_request]
 jobs:
   textlint:
     permissions:
-      contents: write
+      contents: read
+      pull-requests: write
     name: runner / textlint
     runs-on: ubuntu-latest
     steps:
